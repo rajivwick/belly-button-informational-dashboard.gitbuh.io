@@ -1,80 +1,61 @@
-# Unit 14 Homework: Belly Button Biodiversity
+# Belly Button Biodiversity Study
 
-In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogues the microbes that colonise human navels.
+To explore this study I have built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogues the microbes that colonise human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
 ## Instructions
 
-Complete the following steps:
+Dataset: `https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json`.
 
-1. Use the D3 library to read in `samples.json` from the URL `https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json`.
+Dependencies
 
-2. Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+- D3
+- Plotly
+- HTML5
 
-  * Use `sample_values` as the values for the bar chart.
+In order to view dashboard, please visit the following link (The website has been loaded via github pages)
 
-  * Use `otu_ids` as the labels for the bar chart.
+Click [here](https://rajivwick.github.io/belly-button-challenge.gitbuh.io/) to interactive with dashboard.
 
-  * Use `otu_labels` as the hover text for the chart.
+## Overview
 
-  ![bar Chart](Images/hw01.png)
+The dashboard has been constructed to display multiple visualizations that are included to provide the most amount of value to the user.
 
-3. Create a bubble chart that displays each sample.
+![Dashboard](resources/Dash1.JPG)
 
-  * Use `otu_ids` for the x values.
+### Infomation Table 
 
-  * Use `sample_values` for the y values.
+This table displays the immediate information about the selected Test Subject.
 
-  * Use `sample_values` for the marker size.
+<ul>
+<li>ID</li>
+<li>Ethnicity</li>
+<li>Gender</li>
+<li>Age</li>
+<li>Location</li>
+<li>BBType</li>
+<li>WFreq (Wash Frequency)</li>
 
-  * Use `otu_ids` for the marker colours.
+</ul>
 
-  * Use `otu_labels` for the text values.
+![Infotable](resources/Dash-infortable.JPG)
 
-![Bubble Chart](Images/bubble_chart.png)
+### Top 10 OTUs - Horizontal Bar Chart
 
-4. Display the sample metadata, i.e., an individual's demographic information.
+This bar chart showcases the top 10 operational taxonomic units for quick and easy comparisons. 
 
-5. Display each key-value pair from the metadata JSON object somewhere on the page.
+![Barchat](resources/Dash-bar.JPG)
 
-![hw](Images/hw03.png)
+### OTU Samples Values - Bubble Chart
 
-6. Update all the plots when a new sample is selected. Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown below:
+Created to show a visualization of the sample values recorded per OTU, a bubble chart was created with the Y-axis displaying the sample value and the X-axis representing the OTU ID. 
+This allows for OTU ID groupings to be easily identifiable as all as their respective performance. 
 
-![hw](Images/hw02.png)
+![Bubblechart](resources/Dash-bubble.JPG)
 
-7. Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo. Ensure that your repository has regular commits and a thorough README.md file
+### Wash Frequency - Gauge Chart
 
-## Advanced Challenge Assignment (Optional)
+Visually displays via a gauge chart the wash frequency of the selected Test Subject.
 
-The following task is advanced and therefore optional.
-
-* Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
-
-* You will need to modify the example gauge code to account for values ranging from 0 through 9.
-
-* Update the chart whenever a new sample is selected.
-
-![Weekly Washing Frequency Gauge](Images/gauge.png)
-
-
-## Hints
-
-* Use `console.log` inside of your JavaScript code to see what your data looks like at each step.
-
-* Refer to the [Plotly.js documentation](https://plot.ly/javascript/) when building the plots.
-
-## Rubric
-
-[Unit 14 Homework Rubric](https://docs.google.com/document/d/1wD_hOEJELD2hifTaECfx66xlpEdJeYm3mL8q2Zoq1vo/edit?usp=sharing)
-
-- - -
-
-## References
-
-Hulcr, J. et al. (2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
-
-- - -
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![Gaugechart](resources/Dash-gaugechart.JPG)
