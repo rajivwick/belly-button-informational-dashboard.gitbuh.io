@@ -16,7 +16,7 @@ Dependencies
 
 In order to view dashboard, please visit the following link (The website has been loaded via github pages)
 
-Click [here](https://rajivwick.github.io/belly-button-challenge.gitbuh.io/) to interactive with dashboard.
+Click [here](https://rajivwick.github.io/belly-button-informational-dashboard.gitbuh.io/) to interactive with dashboard.
 
 ## Overview
 
